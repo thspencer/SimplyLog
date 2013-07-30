@@ -15,8 +15,8 @@ Usage
   		Logger SimplyLog.Logging = new SimplyLog.Logging();
 			Logger.File		= "simplylog.log";
 			Logger.Format	= SimplyLog.Logging.LogFormat.XHTML;
-			Logger.Level 	= SimplyLog.Logging.LogLevel.EXCEPTION  | 
-                      SimplyLog.Logging.LogLevel.ERROR      |
+			Logger.Level 	= SimplyLog.Logging.LogLevel.EXCEPTION |
+                      SimplyLog.Logging.LogLevel.ERROR     |
                       SimplyLog.Logging.LogLevel.DEBUG;
                       
       // Write a XHTML compliant file header
@@ -27,5 +27,5 @@ Usage
       Logger.Log( "A string with a loglevel", SimplyLog.Logging.LogLevel.DEBUG );
       Logger.Log( "A string with an Exception, SimplyLog.Logging.LogLevel.EXCEPTION, someException );
       
-      // Write a XHTML compliante file footer
+      // Write a XHTML compliant file footer
       Logger.WriteFooter();
